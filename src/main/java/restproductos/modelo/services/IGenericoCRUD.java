@@ -7,7 +7,7 @@ public interface IGenericoCRUD<E, ID> {
     
     List<E> findAll();
 
-    E create(E entity);
+    Optional<E> create(E entity);
 
     Optional<E> read(ID id);
 

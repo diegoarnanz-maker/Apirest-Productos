@@ -21,7 +21,7 @@ public class Producto {
     @Column(name = "precio_unitario")
     private Double precioUnitario;
 
-    @Column(name = "codigo_familia")
+    @Column(name = "codigo_familia", insertable = false, updatable = false)
     private Integer codigoFamilia;
 
     private String marca;
